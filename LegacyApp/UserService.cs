@@ -26,27 +26,25 @@ namespace LegacyApp
             _clientRepository = clientRepository;
             _creditLimitService = creditLimitService;
         }
+        
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
-            if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName))
+            CheckUserData checkUserData = new CheckUserData(firstName, lastName, email, dateOfBirth);
+
+            if (!checkUserData.CheckUserName())
             {
                 return false;
             }
 
-            if (!email.Contains("@") && !email.Contains("."))
+            if (!checkUserData.CheckUserEmail())
             {
                 return false;
             }
 
-            var now = DateTime.Now;
-            int age = now.Year - dateOfBirth.Year;
-            if (now.Month < dateOfBirth.Month || (now.Month == dateOfBirth.Month && now.Day < dateOfBirth.Day)) age--;
-
-            if (age < 21)
+            if (!checkUserData.CheckUserDate())
             {
                 return false;
             }
-
            
             var client = _clientRepository.GetById(clientId);
 
