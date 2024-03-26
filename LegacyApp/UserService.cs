@@ -31,17 +31,7 @@ namespace LegacyApp
         {
             CheckUserData checkUserData = new CheckUserData(firstName, lastName, email, dateOfBirth);
 
-            if (!checkUserData.CheckUserName())
-            {
-                return false;
-            }
-
-            if (!checkUserData.CheckUserEmail())
-            {
-                return false;
-            }
-
-            if (!checkUserData.CheckUserDate())
+            if (!checkUserData.CheckUserName() || !checkUserData.CheckUserDate()||!checkUserData.CheckUserEmail())
             {
                 return false;
             }
@@ -71,11 +61,8 @@ namespace LegacyApp
             else
             {
                 user.HasCreditLimit = true;
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
+                    int creditLimit = _creditLimitService.GetCreditLimit(user.LastName, user.DateOfBirth);
                     user.CreditLimit = creditLimit;
-                }
             }
 
             if (user.HasCreditLimit && user.CreditLimit < 500)
