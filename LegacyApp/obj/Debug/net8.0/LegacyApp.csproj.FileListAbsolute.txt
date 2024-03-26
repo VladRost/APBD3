@@ -10,3 +10,15 @@
 /Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/obj/Debug/net8.0/refint/LegacyApp.dll
 /Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.pdb
 /Users/pgago/Projects/PJATK/classes-materials/APBD/lecture_3/zadanie/LegacyApp/obj/Debug/net8.0/ref/LegacyApp.dll
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/bin/Debug/net8.0/LegacyApp.deps.json
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/bin/Debug/net8.0/LegacyApp.dll
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/bin/Debug/net8.0/LegacyApp.pdb
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.AssemblyInfoInputs.cache
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.AssemblyInfo.cs
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.csproj.CoreCompileInputs.cache
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.sourcelink.json
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.dll
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/refint/LegacyApp.dll
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/LegacyApp.pdb
+/home/sedepr0/Documents/APBD/zadanie/LegacyApp/obj/Debug/net8.0/ref/LegacyApp.dll
